@@ -48,3 +48,10 @@ kbd {
   font-weight: 600;
   padding-bottom: 0.5rem;
 }
+
+footer {
+  display: flex;
+  justify-content: center;
+  color: #f3f4f6;
+  transform: translateY(70vh);
+}
