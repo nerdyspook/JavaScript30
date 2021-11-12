@@ -6,6 +6,45 @@
   box-sizing: border-box;
 }
 
-.container {
-  background-image: url("");
+body {
+  background-image: url("/01-JavaScript-Drum-Kit/images/bg2.jpg");
+  background-size: cover;
+}
+
+.keys {
+  display: flex;
+  justify-content: center;
+  margin-top: 7vh;
+}
+
+.key {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  height: 5rem;
+  width: 6rem;
+
+  margin: 1rem;
+  padding: 0.3rem;
+  color: #f9fafb;
+
+  border: 2px solid #e5e7eb;
+  border-radius: 0.5rem;
+  cursor: pointer;
+
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.key.playing {
+  transform: scale(1.2);
+  box-shadow: 0 14px 26px rgb(0 0 0 / 4%);
+  background-color: transparent;
+  transition: all 0.1s ease;
+}
+
+kbd {
+  font-size: 2rem;
+  font-weight: 600;
+  padding-bottom: 0.5rem;
 }
