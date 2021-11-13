@@ -1,3 +1,9 @@
+:root {
+  --base: #818cf8;
+  --spacing: 10px;
+  --blur: 10px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -26,4 +32,12 @@ img {
   margin-top: 8vh;
   max-height: 50vh;
   max-width: 70vw;
+
+  padding: var(--spacing);
+  background: var(--base);
+  filter: blur(var(--blur));
+}
+
+h2 span {
+  color: var(--base);
 }
