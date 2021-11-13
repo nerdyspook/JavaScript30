@@ -1,6 +1,6 @@
 const keys = document.querySelectorAll(".key");
 
-function removeTransition(e){
+function removeTransition(e){  //e represents the event triggered
     if (e.propertyName !== 'transform') return;
     this.classList.remove("playing")
 }
@@ -12,7 +12,7 @@ window.addEventListener("keydown", e => {
 
     if(!audio) return;
 
-    audio.currentTime = 0;
+    audio.currentTime = 0; // sets the starting point of audio to 0
     audio.play();
     key.classList.add("playing");
 });
